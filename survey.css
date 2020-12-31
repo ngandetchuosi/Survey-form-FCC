@@ -1,0 +1,21 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body{
+text-align: center;
+background-color: rgb(52, 184, 236);
+color: white;
+}
+
+form{
+text-align: left;
+margin: 20px;
+background-color: rgb(29, 109, 141);
+}
+
+.button{
+text-align: center;
+}

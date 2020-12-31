@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School System Survey</title>
+    <link rel="stylesheet" href="survey.css">
+</head>
+
+<body>
+    <!--Form Header-->
+    <h1 id="title"> US School System Survey Form </h1>
+    <p id="description"> Thank you for taking the time to help us improve the platform </p>
+
+    <!--Form begins here-->
+    <form id="survey-form">
+        <label id="name-label">
+            <p> Name: <input type="text" placeholder="Enter name" id="name" required="required"> </p>
+        </label>
+        <label id="email-label">
+            <p> Email: <input type="email" placeholder="Enter your email" id="email" required="required"> </p>
+        </label>
+        <label id="number-label">
+            <p> Age: <input type="number" placeholder="Enter Age" id="number" min="6" max="40"> </p>
+        </label>
+
+        <!--selection-->
+        <p>
+            <label for="school">What is your school level:</label>
+            <select name="school" id="dropdown">
+                <option value="default">Select school level</option>
+                <option value="elementary">Elementary School</option>
+                <option value="Middle">Middle School</option>
+                <option value="High School">High School</option>
+                <option value="College">College</option>
+                <option value="Post-college">Post College</option>
+            </select>
+        </p>
+
+        <!--radio-->
+        <p>
+            <label for="recommend">Would you recommend the US school system to a friend? </label> <br>
+            <label name="recommend">
+                <input type="radio" name="recommend" value="Definitely"> Definitely <br></label>
+            <label name="recommend">
+                <input type="radio" name="recommend" value="Maybe"> Maybe <br></label>
+            <label name="recommend">
+                <input type="radio" name="recommend" value="Not-sure"> Not sure... <br></label>
+            <label name="recommend">
+                <input type="radio" name="recommend" value="no-way"> No way!</label>
+        </p>
+
+        <!--Checkboxes-->
+        <p>
+            <label for="like">What don't you like about the school system?</label> <br>
+            <label>
+                <input type="checkbox" value="Standardiez-test" name="like"> Standardiez test <br></label>
+            <label>
+                <input type="checkbox" value="Segregation-on-smartness" name="like"> Segregation on "smartness"
+                <br></label>
+            <label>
+                <input type="checkbox" value="unqualified-teachers" name="like"> Some unqualified teachers <br></label>
+            <label>
+                <input type="checkbox" value="Outdated-content-and-subjects" name="like"> Outdated content and subjects
+                <br></label>
+            <label>
+                <input type="checkbox" value="Unfair-grading-system" name="like"> Unfair grading system <br></label>
+            <label>
+                <input type="checkbox" value="Not-acknowleging-talents" name="like"> Not acknowleging talents</label>
+        </p>
+
+        <!--Selection-->
+        <p>
+            <label for="school">How would you improve if you could?</label>
+            <select name="school" id="school">
+                <option value="default1">---</option>
+                <option value="change">Completely change it!</option>
+                <option value="improve">Improve it</option>
+                <option value="keep">Keep it as is</option>
+            </select>
+        </p>
+
+        <p> If you chose to improve it, in what way would you improve it? <br>
+            <textarea placeholder="Enter coment here"></textarea>
+        </p>
+
+        <div class="button">
+            <button type="submit" id="submit"> Submit </button>
+        </div>
+
+    </form>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
+</html>
